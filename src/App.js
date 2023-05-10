@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {Container, Typography} from "@mui/material";
+import Form from "./Form/Form";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container sx={{mt:'30px',mb:'30px'}}>
+            <Typography variant='h3' component='h1' sx={{mb:'20px'}}>Форма бронирования переговорной</Typography>
+            <Form/>
+        </Container>
+    );
 }
 
 export default App;
